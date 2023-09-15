@@ -87,6 +87,7 @@ function traverseNumberData() {
   let evenNum = 0;
   let oddNum = 0;
 
+  // Count the Amount of Even Numbers and Odd Numbers
   for (let i = 0; i < numberData.length; i++) {
     if (numberData[i] % 2 == 0) {
       evenNum++;
@@ -95,11 +96,7 @@ function traverseNumberData() {
     }
   }
 
-  // Traverse the numberData array to:
-  // Count the number of even numbers,
-  // Count the number of odd numbers,
   // and output the results in the outputEl.
-
   outputEl.innerHTML = `Number Data <br> Even #s: ${evenNum} <br> Odd #s: ${oddNum}`;
   console.log(numberData);
 }
